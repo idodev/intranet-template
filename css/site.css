@@ -1,3 +1,11 @@
+/* colors
+
+blue: #327ADB;
+darkBlue: #2761AE;
+green: #189841;
+
+*/
+
 body{
 	margin:0;
 	padding:0;
@@ -21,7 +29,7 @@ header.page-top .page-top-bar {
 	top:0;
 	left:0;
 	height:45px;
-	background: rgba(0,0,0,0.2);
+	background: #2761AE;
 }
 
 header.page-top .page-top-bar .core-search {
@@ -46,7 +54,7 @@ header.page-top .page-top-bar .core-search {
 	padding:0 10px;
 	font-size:1.2em;
 	line-height:30px;
-	width:79px;
+	width:110px;
 	border-right:1px solid rgba(255,255,255,0.3);
 	cursor:pointer;
 }
@@ -63,7 +71,7 @@ header.page-top .page-top-bar .core-search {
 	font-size: 1.3em;
 	margin:0;
 	padding:8px 10px;
-	width:280px;
+	width:249px;
 	outline:none;
 }
 
@@ -119,7 +127,12 @@ header.page-top .page-top-bar .user .user-menu-icon {
 	float:left;
 	cursor: pointer;
 }
-header.page-top .page-top-bar .user .user-menu-icon a {
+header.page-top .page-top-bar .user .user-menu-icon>a {
+	display:block;
+	width:45px;
+	height:45px;
+	text-align:center;
+	line-height:45px;
 	color:#FFF;
 }
 
@@ -165,12 +178,14 @@ aside.left-bar {
 	left:0;
 	top:85px;
 	bottom:0;
+	height:100%;
 	width:220px;
 	background: #1E1E1E;
+	overflow:auto;
 }
 
 aside.left-bar ul {
-	margin:20px 0 0 0;
+	margin:40px 0 0 0;
 	padding:0;
 	list-style:none;
 }
@@ -194,6 +209,135 @@ aside.left-bar ul li a:hover{
 }
 
 
+nav.breadcrumb {
+	margin-left:220px;
+	overflow: hidden;
+}
+nav.breadcrumb ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+nav.breadcrumb ul li {
+	display: block;
+	float:left;
+	font-size:1.3em;
+	color:#222;
+	line-height:40px;
+	font-weight:500;
+}
+
+nav.breadcrumb ul li a {
+	position: relative;
+	display:block;
+	text-decoration: none;
+	color:#555;
+	font-weight: 400;
+
+}
+nav.breadcrumb ul li a:hover {
+	color:#327ADB;
+}
+
+nav.breadcrumb ul li span {
+	padding:0 20px 0 20px;
+}
+nav.breadcrumb ul li a:after{
+	display: block;
+	float:right;
+	font-family:FontAwesome;
+	content:"\f054";
+	color:#2761AE;
+	font-size:1em;
+	line-height:40px;
+	opacity:0.8;
+}
+
+section.container {
+	margin-left:220px;
+}
+
+section.container div.content {
+	margin:20px 0;
+	width:800px;
+	color:#222;
+}
+
+section.container h1, section.container h2, section.container p {
+	margin-left:20px;
+}
+section.container form {
+	margin-left: 40px;
+}
+
+/* Core elements */
+h1 {
+	font-size:3em;
+	padding-left:15px;
+}
+
+h2 {
+	font-size: 2em;
+	padding-left:15px;
+}
+
+p {
+	font-size:1.3em;
+	line-height:1.5em;
+	padding:15px;
+}
+
+p.well {
+	background:#FAFAFA;
+	border-bottom:2px solid #CCC;
+}
+
+
+/* forms */
+form {
+	display: block;
+	margin:0;
+	padding:0;
+}
+fieldset {
+	display: block;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+fieldset>label {
+	float:left;
+	display: block;
+	margin:0;
+	padding:0;
+	width:120px;
+	font-size:1.3em;
+	line-height: 40px;
+}
+
+fieldset input, fieldset select {
+	float:left;
+	font-size:1.3em;
+	height:20px;
+	padding:5px 10px;
+	margin:3px 0;
+	margin-right:5px;
+	border:1px solid #AAA;
+	box-shadow:inset 0 0 2px 0 #EEE;
+}
+
+fieldset input:focus, fieldset select:focus {
+	outline-color: #327ADB;
+}
+fieldset select {
+	height:34px;
+}
+fieldset input[type=text], fieldset input[type=email] {
+	width:300px;
+}
+
+
 div.modal-backdrop {
 	position:fixed;
 	top:0;
@@ -208,6 +352,10 @@ div.modal-backdrop {
 	display: none;
 }
 
+
+
+
+/*-- HELP WINDOW --*/
 section.help {
 	position: fixed;
 	top:0;
@@ -239,9 +387,28 @@ section.help .help-link:hover {
 
 
 
+/*-- SCROLL TO TOP --*/
+.scroll-to-top {
+	display: block;
+	position:fixed;
+	right:0;
+	top:0px;
+	width:40px;
+	height: 40px;
+	background:#2761AE;
+	color:#FFF;
+	padding: 0;
+	margin: 0;
+	line-height:40px;
+	text-align: center;
+	opacity:0.6;
+	cursor:pointer;
+}
+.scroll-to-top:hover {
+	opacity:1;
+}
 
-
-
+/*-- MINI MENU --*/
 .mini-menu {
 	background:#1F4D8A;
 	margin:0;
@@ -277,4 +444,88 @@ section.help .help-link:hover {
 }
 .mini-menu li a i {
 	opacity:0.8;
+}
+
+
+
+/*-- FLASH MESSAGE --*/
+.flash-message {
+	display: block;
+	position:fixed;
+	top:0;
+	left:50%;
+	width:500px;
+	margin-left:-250px;
+	background: white;
+	border-bottom:4px solid #CCC;
+	z-index:2000;
+}
+
+.flash-message .close {
+	position: absolute;
+	display: block;
+	width:30px;
+	height:30px;
+	right:0;
+	top:0;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	opacity:0.8;
+	font-size:1.2em;
+}
+.flash-message .close:hover {
+	opacity: 1;
+}
+
+.flash-message p {
+	margin:0;
+	padding: 20px 30px 10px 20px;
+	line-height: 1.8em;
+	font-size: 1.2em;
+	text-align: center;
+}
+.flash-message .buttons {
+	padding:10px 20px;
+	overflow: hidden;
+}
+.flash-message .buttons a.cancel {
+	line-height: 1.8em;
+	font-size: 1.2em;
+	color:#999;
+	float:left;
+	text-decoration: underline;
+	line-height: 35px;
+	cursor: pointer;
+}
+.flash-message .buttons a.cancel:hover {
+	color:#555;
+}
+
+.flash-message .buttons button {
+	float:right;
+	border:none;
+	background: #AAA;
+	color:#FFF;
+	padding:10px 20px 8px 20px;
+	border-bottom:2px solid rgba(0,0,0,0.2);
+	cursor: pointer;
+	outline: none;
+	margin-left:10px;
+}
+
+.flash-message .buttons button.accept {
+	background: #189841;
+	
+}
+
+.flash-message .buttons button.deny {
+	background: #D22020;
+	
+}
+
+
+.flash-message .buttons button:active {
+	border-bottom: none;
+	margin-top:2px;
 }

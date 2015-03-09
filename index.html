@@ -9,6 +9,7 @@
 </head>
 <body>
 	<div class="modal-backdrop"></div>
+	<span class="scroll-to-top"><i class="fa fa-chevron-up"></i></span>
 	<header class="page-top">
 		
 		<div class="logo">
@@ -28,11 +29,11 @@
 					<ul class="mini-menu right">
 						<li><a href=""><i class="fa fa-wrench fa-fw"></i>&nbsp;&nbsp;Edit Details</a></li>
 						<li><a href=""><i class="fa fa-key fa-fw"></i>&nbsp;&nbsp;Change Password</a></li>
-						<li><a href=""><i class="fa fa-users fa-fw"></i>&nbsp;&nbsp;Switch User</a></li>
+						<li class="switch-user"><a href="#"><i class="fa fa-users fa-fw"></i>&nbsp;&nbsp;Switch User</a></li>
 					</ul>
 				</span>
 				<span class="user-menu-icon signout">
-					<a href="#" title="signout"><i class="fa fa-sign-out"></i></a>
+					<a href="/" title="signout"><i class="fa fa-sign-out"></i></a>
 				</span>
 				
 
@@ -75,6 +76,8 @@
 			</ul>
 		</nav>
 	</header>
+	
+
 	<aside class="left-bar">
 		<ul>
 			<li><a href="">Certificates</a></li>
@@ -86,30 +89,74 @@
 			<li><a href="">Calendar</a></li>
 			<li><a href="">Memos</a></li>
 	</aside>
-	<section class="container">
+	
+	<nav class="breadcrumb">
+		<ul>
+			<li><a href=""><span>Admin</span></a></li>
+			<li><a href=""><span>Holiday</span></a></li>
+			<li><span>Edit Record</span></li>
+		</ul>
+	</nav>
 
+	<section class="container">
+		<div class="content">
+			<h1>Page Title</h1>
+			<p class="well">The intent of this page is to show you all of the UI elements and their styling within this framework, where possible code examples are provided to explain its implementation.</p>
+			
+			<h2>Forms</h2>
+
+			<form class="example-form">
+				<fieldset>
+					<label>Text input</label>
+					<input type="text" name="example-textinput">
+				</fieldset>
+
+				<fieldset>
+					<label>Email input</label>
+					<input type="email" name="example-textinput" placeholder="name@email.com">
+				</fieldset>
+
+				<fieldset>
+					<label>Numeric input</label>
+					<input type="text" name="example-textinput">
+				</fieldset>
+
+				<fieldset>
+					<label>Date input</label>
+					<input type="text" name="example-textinput">
+				</fieldset>
+
+				<fieldset>
+					<label>Multiple inputs</label>
+					<input type="text" style="width:20px"><input type="text" style="width:20px"><input type="text" style="width:20px">
+				</fieldset>
+
+				<fieldset>
+					<label>Select box</label>
+					<select>
+						<option>Option 1</option>
+						<option>Second Option</option>
+						<option>Final Option</option>
+					</select>
+				</fieldset>
+			</form>
+
+
+			<h2>Tables</h2>
+
+			<h2>Links</h2>
+
+			<h2>Text</h2>
+
+			<h2>Dashboard Widgets</h2>
+		</div>
 	</section>
+	
 	<section class="help">
 		<span class="help-link"><i class="fa fa-question-circle"></i></span>
 	</section>
 
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="/js/site.js"></script>
-
-	<div class="minimodal" style="display:none;">
-		<fieldset>
-			<label>Sign in as</label> 
-			<select>
-				<option value="">Andrew Lawrance</option>
-				<option value="">Darren Olver</option>
-				<option value="">Matthew Cremore</option>
-			</select>
-		</fieldset>
-		
-		<div class="mm-buttons">
-			<a href="#" class="close">close</a>
-			<button>Go</button>
-		</div>
-	</div>
 </body>
 </html>
