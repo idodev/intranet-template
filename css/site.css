@@ -3,6 +3,8 @@
 blue: #327ADB;
 darkBlue: #2761AE;
 green: #189841;
+red: #D22020;
+orange: #FFAD2F;
 
 */
 
@@ -71,8 +73,10 @@ header.page-top .page-top-bar .core-search {
 	font-size: 1.3em;
 	margin:0;
 	padding:8px 10px;
+	height:15px;
 	width:249px;
 	outline:none;
+	box-shadow: none;
 }
 
 .core-search-box .core-search-go {
@@ -97,6 +101,7 @@ header.page-top .page-top-bar .user {
 }
 
 header.page-top .page-top-bar .user .avatar {
+	position: relative;
 	display:block;
 	width: 36px;
 	height: 36px;
@@ -106,13 +111,14 @@ header.page-top .page-top-bar .user .avatar {
 	border:2px solid rgba(255,255,255,0.2);
 	margin: 2px 10px 0 0;
 }
+
 header.page-top .page-top-bar .user .avatar img {
 	width:100%;
 	margin-top:-10px;
-
 }
 
 header.page-top .page-top-bar .user .name {
+	position: relative;
 	display: block;
 	float:left;
 	margin-right:20px;
@@ -177,11 +183,11 @@ aside.left-bar {
 	position: absolute;
 	left:0;
 	top:85px;
+	
 	bottom:0;
-	height:100%;
 	width:220px;
 	background: #1E1E1E;
-	overflow:auto;
+	overflow: auto;
 }
 
 aside.left-bar ul {
@@ -293,6 +299,35 @@ p.well {
 }
 
 
+/*-- TABS --*/
+.tabs ul {
+	list-style:none;
+	margin:0;
+	padding: 0 20px;
+	border-bottom: 2px solid #222;
+	overflow: hidden;
+	margin-bottom:10px;
+}
+.tabs ul li {
+	display: block;
+	float:left;
+	margin:0;
+	padding:0;
+}
+.tabs ul li a {
+	display: block;
+	line-height:40px;
+	font-size:1.3em;
+	padding:0 30px;
+	text-decoration: none;
+	color:#555;
+}
+.tabs ul li a.active {
+	background: #FFFFFF;
+	color: #327ADB;
+	font-weight: 500;
+}
+
 /* forms */
 form {
 	display: block;
@@ -316,8 +351,10 @@ fieldset>label {
 	line-height: 40px;
 }
 
-fieldset input, fieldset select {
+fieldset input,fieldset  select {
 	float:left;
+}
+input, select {
 	font-size:1.3em;
 	height:20px;
 	padding:5px 10px;
@@ -327,27 +364,139 @@ fieldset input, fieldset select {
 	box-shadow:inset 0 0 2px 0 #EEE;
 }
 
-fieldset input:focus, fieldset select:focus {
+input:focus, select:focus {
 	outline-color: #327ADB;
 }
-fieldset select {
+select {
 	height:34px;
 }
 fieldset input[type=text], fieldset input[type=email] {
 	width:300px;
 }
 
+/*-- TABLES --*/
+.list-table {
+	margin-left:20px;
+}
+.list-table table {
+	width:100%;
+	box-sizing:border-box;
+	border-collapse: collapse;
+	border-spacing: 0;	
+}
 
+.list-table table thead {
+	background: #327ADB;
+}
+.list-table table thead th {
+	font-weight: 400;
+	text-align: left;
+	font-size:1.3em;
+	padding:1em 0.5em;
+	color:#FFF;
+	background: #327ADB;
+}
+
+.list-table table tbody {
+	background: #FFF;
+}
+.list-table table tbody td {
+	font-size:1.2em;
+	font-weight:100;
+	padding:0.8em;
+	background: #FFF;
+	vertical-align: top;
+	border-top: 1px solid #FFF;
+}
+
+.list-table table tbody td.button {
+	padding:0;
+}
+.list-table table tbody td.button button {
+	height:33px;
+	width:100%;
+	line-height: 33px;
+	background: #189841;
+	color:#FFF;
+	border:0;
+	cursor:pointer;
+}
+
+.list-table table tbody td.button button:hover {
+	background: #158B3B;
+}
+
+
+.list-table .currency, .list-table .number {
+	text-align: right;
+}
+.list-table .integer td.id {
+	text-align:center;
+}
+
+.list-table td span.pill {
+	background: #AAA;
+	padding:4px 6px;
+	color:#FFF;
+	font-size: 0.9em;
+}
+.list-table td span.pill.red {
+	background: #D22020;
+}
+
+.list-table td.check {
+	padding:0;
+	height:33px;
+	width:33px;
+	position: relative;
+}
+.list-table td.check input {
+	opacity:0;
+	height:33px;
+	width:33px;
+	padding:0;
+	margin:0;
+}
+.list-table td.check label {
+	display:block;
+	position: absolute;
+	top:0;
+	left:0;
+	width:33px;
+	height:33px;
+}
+.list-table td.check label:after {
+	display: block;
+	position: absolute;
+	left:0;
+	top:0;
+	width:33px;
+	height:33px;
+	line-height: 33px;
+	font-family: FontAwesome;
+	font-size:1.2em;
+	text-align: center;
+	content:"\f096";
+	cursor:pointer;
+	opacity:0.6;
+}
+.list-table td.check input:checked+label:after {
+	content:"\f046";
+}
+
+.list-table td.check:hover:after {
+	opacity:1;
+}
 div.modal-backdrop {
 	position:fixed;
 	top:0;
 	bottom:0;
 	left:0;
 	right:0;
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
 	background: #000;
-	opacity:0.3;
+	opacity: 0.3;
 	z-index: 100;
 	display: none;
 }
@@ -386,6 +535,11 @@ section.help .help-link:hover {
 
 
 
+/*status*/
+i.online {color:#189841;}
+i.busy {color:#FFAD2F;}
+i.away {color:#333;}
+
 
 /*-- SCROLL TO TOP --*/
 .scroll-to-top {
@@ -415,7 +569,6 @@ section.help .help-link:hover {
 	padding:0;
 	position:absolute;
 	top:100%;
-	left:0;
 	list-style:none;
 	z-index: 1000;
 	text-align: left;
@@ -425,7 +578,9 @@ section.help .help-link:hover {
 }
 .mini-menu.right{
 	right:0;
-	left:auto;
+}
+.mini-menu.left{
+	left:0;
 }
 .active .mini-menu {
 	display: block;
@@ -444,9 +599,8 @@ section.help .help-link:hover {
 }
 .mini-menu li a i {
 	opacity:0.8;
+	margin-left:-10px;
 }
-
-
 
 /*-- FLASH MESSAGE --*/
 .flash-message {

@@ -8,153 +8,319 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="modal-backdrop"></div>
-	<span class="scroll-to-top"><i class="fa fa-chevron-up"></i></span>
-	<header class="page-top">
-		
-		<div class="logo">
-			<a href="/">
-				<!--<img src="/img/logo.png" alt="Tecker Limited">-->
-			</a>
-		</div>
-
-		<div class="page-top-bar">
-			<div class="user">
-				<span class="avatar">
-					<img src="https://intranet.tecker.co.uk/functions/thumb.php?jpg=F:\ContractDBFileStore\employees\photos\256.jpg&size=100">
-				</span>
-				<span class="name">Toby Foord</span>
-				<span class="user-menu-icon settings">
-					<i class="fa fa-bars"></i>
-					<ul class="mini-menu right">
-						<li><a href=""><i class="fa fa-wrench fa-fw"></i>&nbsp;&nbsp;Edit Details</a></li>
-						<li><a href=""><i class="fa fa-key fa-fw"></i>&nbsp;&nbsp;Change Password</a></li>
-						<li class="switch-user"><a href="#"><i class="fa fa-users fa-fw"></i>&nbsp;&nbsp;Switch User</a></li>
-					</ul>
-				</span>
-				<span class="user-menu-icon signout">
-					<a href="/" title="signout"><i class="fa fa-sign-out"></i></a>
-				</span>
-				
-
+	<div class="page-div">
+		<div class="modal-backdrop"></div>
+		<span class="scroll-to-top"><i class="fa fa-chevron-up"></i></span>
+		<header class="page-top">
+			
+			<div class="logo">
+				<a href="/">
+					<!--<img src="/img/logo.png" alt="Tecker Limited">-->
+				</a>
 			</div>
 
-			<div class="core-search">
-				<div class="core-search-box">
-					<span class="type">
-						<i class="fa fa-chevron-down fa-fw"></i>&nbsp;<em>Contracts</em>
-						<ul class="mini-menu">
-							<li><a href="#">Contracts</a></li>
-							<li><a href="#">Sites</a></li>
-							<li><a href="#">Suppliers</a></li>
-							<li><a href="#">Purchase Orders</a></li>
-							<li><a href="#">Equipment</a></li>
-							<li><a href="#">Vehicles</a></li>
-							<li><a href="#">Employees</a></li>
+			<div class="page-top-bar">
+				<div class="user">
+					<span class="name">
+						<i class="fa fa-circle fa-fw online"></i> Toby Foord
+						<ul class="mini-menu left">
+							<li><a href="">
+								<i class="fa fa-circle fa-fw online"></i>&nbsp;&nbsp;Online
+							</a></li>
+							<li><a href="">
+								<i class="fa fa-circle fa-fw busy"></i>&nbsp;&nbsp;Busy
+							</a></li>
+							<li><a href="#">
+								<i class="fa fa-circle fa-fw away"></i>&nbsp;&nbsp;Away
+							</a></li>
 						</ul>
 					</span>
-					<input type="text" name="core-search-input">
-					<span class="core-search-go"><i class="fa fa-search"></i></span>
+					<span class="avatar">
+						<img src="https://intranet.tecker.co.uk/functions/thumb.php?jpg=F:\ContractDBFileStore\employees\photos\256.jpg&size=100">
+					</span>
+					<span class="user-menu-icon settings">
+						<i class="fa fa-bars"></i>
+						<ul class="mini-menu right">
+							<li><a href=""><i class="fa fa-wrench fa-fw"></i>&nbsp;&nbsp;Edit Details</a></li>
+							<li><a href=""><i class="fa fa-key fa-fw"></i>&nbsp;&nbsp;Change Password</a></li>
+							<li class="switch-user"><a href="#"><i class="fa fa-users fa-fw"></i>&nbsp;&nbsp;Switch User</a></li>
+						</ul>
+					</span>
+					<span class="user-menu-icon signout">
+						<a href="/" title="signout"><i class="fa fa-sign-out"></i></a>
+					</span>
+					
+
 				</div>
+
+				<div class="core-search">
+					<div class="core-search-box">
+						<span class="type">
+							<i class="fa fa-chevron-down fa-fw"></i>&nbsp;<em>Contracts</em>
+							<ul class="mini-menu left">
+								<li><a href="#">Contracts</a></li>
+								<li><a href="#">Sites</a></li>
+								<li><a href="#">Suppliers</a></li>
+								<li><a href="#">Purchase Orders</a></li>
+								<li><a href="#">Equipment</a></li>
+								<li><a href="#">Vehicles</a></li>
+								<li><a href="#">Employees</a></li>
+							</ul>
+						</span>
+						<input type="text" name="core-search-input">
+						<span class="core-search-go"><i class="fa fa-search"></i></span>
+					</div>
+				</div>
+
+				
 			</div>
-
 			
-		</div>
-		
-		<nav class="site-nav">
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">Accounts</a></li>
-				<li><a href="">Admin</a></li>
-				<li><a href="">Contracts</a></li>
-				<li><a href="">Financial</a></li>
-				<li><a href="">H&amp;S</a></li>
-				<li><a href="">Purchasing</a></li>
-				<li><a href="">Q&amp;E</a></li>
-				<li><a href="">Reports</a></li>
+			<nav class="site-nav">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Accounts</a></li>
+					<li><a href="">Admin</a></li>
+					<li><a href="">Contracts</a></li>
+					<li><a href="">Financial</a></li>
+					<li><a href="">H&amp;S</a></li>
+					<li><a href="">Purchasing</a></li>
+					<li><a href="">Q&amp;E</a></li>
+					<li><a href="">Reports</a></li>
 
+				</ul>
+			</nav>
+		</header>
+		
+
+		<aside class="left-bar">
+			<ul>
+				<li><a href="">Certificates</a></li>
+				<li><a href="">EDM</a></li>
+				<li><a href="">Expenses</a></li>
+				<li><a href="">Holiday</a></li>
+				<li><a href="">Job Instructions</a></li>
+				<li><a href="">Meetings</a></li>
+				<li><a href="">Calendar</a></li>
+				<li><a href="">Memos</a></li>
+		</aside>
+		
+		<nav class="breadcrumb">
+			<ul>
+				<li><a href=""><span>Admin</span></a></li>
+				<li><a href=""><span>Holiday</span></a></li>
+				<li><span>Edit Record</span></li>
 			</ul>
 		</nav>
-	</header>
-	
 
-	<aside class="left-bar">
-		<ul>
-			<li><a href="">Certificates</a></li>
-			<li><a href="">EDM</a></li>
-			<li><a href="">Expenses</a></li>
-			<li><a href="">Holiday</a></li>
-			<li><a href="">Job Instructions</a></li>
-			<li><a href="">Meetings</a></li>
-			<li><a href="">Calendar</a></li>
-			<li><a href="">Memos</a></li>
-	</aside>
-	
-	<nav class="breadcrumb">
-		<ul>
-			<li><a href=""><span>Admin</span></a></li>
-			<li><a href=""><span>Holiday</span></a></li>
-			<li><span>Edit Record</span></li>
-		</ul>
-	</nav>
+		<section class="container">
+			<div class="content">
+				<h1>Page Title</h1>
+				<p class="well">The intent of this page is to show you all of the UI elements and their styling within this framework, where possible code examples are provided to explain its implementation.</p>
 
-	<section class="container">
-		<div class="content">
-			<h1>Page Title</h1>
-			<p class="well">The intent of this page is to show you all of the UI elements and their styling within this framework, where possible code examples are provided to explain its implementation.</p>
-			
-			<h2>Forms</h2>
+				<div class="tabs">
+					<ul class="nav">
+						<li><a href="#tabs">Tabs</a></li>
+						<li><a href="#forms">Forms</a></li>
+						<li><a href="#tables">Tables</a></li>
+						<li><a href="#text">Text</a></li>
+						<li><a href="#widgets">Widgets</a></li>
+					</ul>
+					<div class="tab" rel="tabs">
+						<p>Look around you!</p>
+					</div>
+					<div class="tab" rel="forms">
+						<form class="example-form">
+							<fieldset>
+								<label>Text input</label>
+								<input type="text" name="example-textinput">
+							</fieldset>
 
-			<form class="example-form">
-				<fieldset>
-					<label>Text input</label>
-					<input type="text" name="example-textinput">
-				</fieldset>
+							<fieldset>
+								<label>Email input</label>
+								<input type="email" name="example-textinput" placeholder="name@email.com">
+							</fieldset>
 
-				<fieldset>
-					<label>Email input</label>
-					<input type="email" name="example-textinput" placeholder="name@email.com">
-				</fieldset>
+							<fieldset>
+								<label>Numeric input</label>
+								<input type="text" name="example-textinput">
+							</fieldset>
 
-				<fieldset>
-					<label>Numeric input</label>
-					<input type="text" name="example-textinput">
-				</fieldset>
+							<fieldset>
+								<label>Date input</label>
+								<input type="text" name="example-textinput">
+							</fieldset>
 
-				<fieldset>
-					<label>Date input</label>
-					<input type="text" name="example-textinput">
-				</fieldset>
+							<fieldset>
+								<label>Multiple inputs</label>
+								<input type="text" style="width:20px"><input type="text" style="width:20px"><input type="text" style="width:20px">
+							</fieldset>
 
-				<fieldset>
-					<label>Multiple inputs</label>
-					<input type="text" style="width:20px"><input type="text" style="width:20px"><input type="text" style="width:20px">
-				</fieldset>
+							<fieldset>
+								<label>Select box</label>
+								<select>
+									<option>Option 1</option>
+									<option>Second Option</option>
+									<option>Final Option</option>
+								</select>
+							</fieldset>
+						</form>
+					</div>
+					<div class="tab" rel="tables">
+						<p class="well">
+							Javascript is utilised to automatically add sorting functionality to tables, likewise pagination can be applied if the data attribute is defined on the table
+						</p>
+						<div class="list-table">
+							<table border="0" cellspacing="0">
+								<thead>
+									<tr>
+										<th class="id">ID</th>
+										<th class="text">Title</th>
+										<th class="long-text">Description</th>
+										<th class="currency">Line Cost</th>
+										<th class="integer">Quantity</th>
+										<th class="currency">Total</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="id">1</td>
+										<td class="text">This is a title</td>
+										<td class="long-text">A much longer bit of text that can be controlled somehow</td>
+										<td class="currency">45.00</td>
+										<td class="integer">1</td>
+										<td class="currency">45.00</td>
+										<td class="button"><button class="accept">confirm</button></td>
+									</tr>
+									<tr>
+										<td class="id">1</td>
+										<td class="text">This is a title</td>
+										<td class="long-text">A much longer bit of text that can be controlled somehow</td>
+										<td class="currency">45.00</td>
+										<td class="number">1</td>
+										<td class="currency">45.00</td>
+										<td class="button"><button class="accept">confirm</button></td>
+									</tr>
+									<tr>
+										<td class="id">1</td>
+										<td class="text">This is a title</td>
+										<td class="long-text">A much longer bit of text that can be controlled somehow</td>
+										<td class="currency">45.00</td>
+										<td class="number">1</td>
+										<td class="currency">45.00</td>
+										<td class="button"><button class="accept">confirm</button></td>
+									</tr>
+									<tr>
+										<td class="id">1</td>
+										<td class="text">This is a title</td>
+										<td class="long-text">A much longer bit of text that can be controlled somehow</td>
+										<td class="currency">45.00</td>
+										<td class="number">1</td>
+										<td class="currency">45.00</td>
+										<td class="button"><button class="accept">confirm</button></td>
+									</tr>
+									<tr>
+										<td class="id">1</td>
+										<td class="text">This is a title</td>
+										<td class="long-text">A much longer bit of text that can be controlled somehow</td>
+										<td class="currency">45.00</td>
+										<td class="number">1</td>
+										<td class="currency">45.00</td>
+										<td class="button"><button class="accept">confirm</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<br/>
+						<div class="list-table">
+							<table border="0" cellspacing="0">
+								<thead>
+									<tr>
+										<th class="check"></th>
+										<th class="long-text">Subject</th>
+										<th class="text">From</th>
+										<th class="date">Recieved</th>
+										<th class="text">Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="check"><input type="checkbox" name="ltcbx1" id="ltcbx1"/><label for="ltcbx1"></label></td>
+										<td class="long-text">can you confirm the expected arrival ...</td>
+										<td class="text">mike.jenner@gmail.com</td>
+										<td class="date">13:45 12th January 2015</td>
+										<td class="text"><span class="pill red">urgent</span></td>
+									</tr>
+									<tr>
+										<td class="check"><input type="checkbox" name="ltcbx2" id="ltcbx2"/><label for="ltcbx2"></label></td>
+										<td class="long-text">Discount applied to PO 12345</td>
+										<td class="text">terryg@bargains.com</td>
+										<td class="date">11:38 11th January 2015</td>
+										<td class="text"><span class="pill grey">pending</span></td>
+									</tr>
+									<tr>
+										<td class="check"><input type="checkbox" name="ltcbx3" id="ltcbx3"/><label for="ltcbx3"></label></td>
+										<td class="long-text">can you confirm the expected arrival ...</td>
+										<td class="text">mike.jenner@gmail.com</td>
+										<td class="date">13:45 12th January 2015</td>
+										<td class="text"><span class="pill red">urgent</span></td>
+									</tr>
+									<tr>
+										<td class="check"><input type="checkbox" name="ltcbx4" id="ltcbx4"/><label for="ltcbx4"></label></td>
+										<td class="long-text">Discount applied to PO 12345</td>
+										<td class="text">terryg@bargains.com</td>
+										<td class="date">11:38 11th January 2015</td>
+										<td class="text"><span class="pill grey">pending</span></td>
+									</tr>
+									<tr>
+										<td class="check"><input type="checkbox" name="ltcbx5" id="ltcbx5"/><label for="ltcbx5"></label></td>
+										<td class="long-text">can you confirm the expected arrival ...</td>
+										<td class="text">mike.jenner@gmail.com</td>
+										<td class="date">13:45 12th January 2015</td>
+										<td class="text"><span class="pill red">urgent</span></td>
+									</tr>
+									<tr>
+										<td class="check"><input type="checkbox" name="ltcbx6" id="ltcbx6"/><label for="ltcbx6"></label></td>
+										<td class="long-text">Discount applied to PO 12345</td>
+										<td class="text">terryg@bargains.com</td>
+										<td class="date">11:38 11th January 2015</td>
+										<td class="text"><span class="pill grey">pending</span></td>
+									</tr>
+									<tr>
+										<td class="check"><input type="checkbox" name="ltcbx7" id="ltcbx7"/><label for="ltcbx7"></label></td>
+										<td class="long-text">can you confirm the expected arrival ...</td>
+										<td class="text">mike.jenner@gmail.com</td>
+										<td class="date">13:45 12th January 2015</td>
+										<td class="text"><span class="pill red">urgent</span></td>
+									</tr>
+									<tr>
+										<td class="check"><input type="checkbox" name="ltcbx8" id="ltcbx8"/><label for="ltcbx8"></label></td>
+										<td class="long-text">Discount applied to PO 12345</td>
+										<td class="text">terryg@bargains.com</td>
+										<td class="date">11:38 11th January 2015</td>
+										<td class="text"><span class="pill grey">pending</span></td>
+									</tr>
 
-				<fieldset>
-					<label>Select box</label>
-					<select>
-						<option>Option 1</option>
-						<option>Second Option</option>
-						<option>Final Option</option>
-					</select>
-				</fieldset>
-			</form>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab" rel="text">
 
+					</div>
+					<div class="tab" rel="widgets">
 
-			<h2>Tables</h2>
+					</div>
+				</div>
 
-			<h2>Links</h2>
-
-			<h2>Text</h2>
-
-			<h2>Dashboard Widgets</h2>
-		</div>
-	</section>
-	
-	<section class="help">
-		<span class="help-link"><i class="fa fa-question-circle"></i></span>
-	</section>
+			</div>
+		</section>
+		
+		<section class="help">
+			<span class="help-link"><i class="fa fa-question-circle"></i></span>
+		</section>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="/js/site.js"></script>
