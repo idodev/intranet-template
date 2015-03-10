@@ -264,16 +264,9 @@ section.container {
 }
 
 section.container div.content {
-	margin:20px 0;
-	width:800px;
+	margin:20px;
+	min-width:740px;
 	color:#222;
-}
-
-section.container h1, section.container h2, section.container p {
-	margin-left:20px;
-}
-section.container form {
-	margin-left: 40px;
 }
 
 /* Core elements */
@@ -375,9 +368,7 @@ fieldset input[type=text], fieldset input[type=email] {
 }
 
 /*-- TABLES --*/
-.list-table {
-	margin-left:20px;
-}
+
 .list-table table {
 	width:100%;
 	box-sizing:border-box;
